@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../Images/Background-image2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn 0.5s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#login-box{
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 10%);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 0 10px 2px blueviolet;
+}
+
+label{
+    margin: 10px;
+    color: white;
+}
+
+.input-text{
+    margin: 10px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.input-text::placeholder{
+    font-family: "Poppins", sans-serif;
+}
+
+#login-btn{
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg,#ff4dff,#b517ff,#7b2cff) ;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#login-btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+h1{
+    color: white !important;
+}
+
+span{
+    font-weight: bold;
+    background: linear-gradient(135deg,#ff4dff,#b517ff,#7b2cff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#logo-img{
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#Registerlink-div{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+}
+
+#Registerlink-div a{
+    margin-left: 5px;
+    color: blue;
+}

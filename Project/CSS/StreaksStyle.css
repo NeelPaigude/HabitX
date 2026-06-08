@@ -1,0 +1,190 @@
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    background: url(../Images/Background-image2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Header div */
+#Header-div{
+    display: flex;
+    background: rgba(255,255,255, 10%);
+    padding: 40px;
+    align-items: center;
+    color: white;
+    margin: 1%;
+    border-radius: 20px;
+}
+
+#Header-div img{
+    height: 50px;
+    width: 50px;
+}
+
+#Header-div span{
+    color: white;
+    margin-left: 10px;
+    font-size: 60px;
+    text-shadow: 0 0 5px blueviolet;
+    text-shadow: 0 0 10px blueviolet;
+    text-shadow: 0 0 15px blueviolet;
+}
+
+#Header-div:hover{
+    box-shadow: 0 0 10px 1px blueviolet;
+}
+/* Header div */
+
+/* Weekly-streak div */
+#weekly-streak{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+}
+#heading-div{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    align-items: center;
+    background: rgba(255,255,255, 10%);
+    backdrop-filter: blur(15px);
+    margin: 20px auto;
+    width: 500px;
+    border-radius: 20px;
+}
+
+#heading-div:hover{
+    box-shadow: 0 0 10px 1px white;
+}
+
+#heading-div h1{
+    align-self: center;
+}
+
+#heading-div img{
+    height: 35px;
+    width: 35px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#calendar-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.date-div{
+    height: 100px;
+    width: 175px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255,255,255,10%);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+}
+
+.date-div img{
+    height: 30px;
+    width: 30px;
+}
+
+.completed:hover{
+    box-shadow: 0 0 10px 1px lime;
+}
+
+#missed:hover{
+    box-shadow: 0 0 10px 1px red;
+}
+
+.not-arrived:hover{
+    box-shadow: 0 0 10px 1px blue;
+}
+/* Weekly-streak div */
+
+/* Streak info div */
+#streak-info-div{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px; 
+    gap: 20px;
+}
+
+.streak-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255,255,255, 10%);
+    backdrop-filter: blur(15px);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.streak-info:hover{
+ box-shadow: 0 0 10px 1px white;
+}
+
+.streak-info img{
+    height: 40px;
+    width: 40px;
+}
+
+.streak-info span{
+    color: white;
+    margin-left: 10px;
+    font-size: 40px;
+    text-shadow: 0 0 5px blueviolet;
+    text-shadow: 0 0 10px blueviolet;
+    text-shadow: 0 0 15px blueviolet;
+}
+/* Streak info div */
+
+#Back-div{
+    padding: 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#Back-div a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#ff4dff,#b517ff,#7b2cff);
+    gap: 10px;
+    align-items: center;
+}
+
+#Back-div a img{
+    height: 20px;
+    width: 20px;
+}
+
+#Back-div a:hover{
+    transform: scale(1.05);
+}

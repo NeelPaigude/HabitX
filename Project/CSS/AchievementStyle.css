@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    background: url(../Images/Background-image2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* HEADER SECTION */
+#header-div{
+    border: none;
+    color: white;
+    margin: 1%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 10%);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+}
+
+#header-div:hover{
+    box-shadow: 0 0 10px 2px blueviolet;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    height: 100px;
+}
+
+#header img{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+/* HEADER SECTION */
+
+.achievement-unlocked{
+    background: rgba(255, 255, 255, 10%);
+    backdrop-filter: blur(15px);
+    color: white;
+    padding: 15px;
+    width: 500px;
+    margin: 30px 1%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 1px white;
+}
+
+/* ACHIEVEMENT SECTION */
+.achievement-div{
+   display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 30px;
+   gap: 50px;
+}
+
+.achievement-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 370px;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 10%);
+    backdrop-filter: blur(15px);
+    color: white;
+}
+
+.completed:hover{
+    box-shadow: 0 0 10px 1px gold;
+}
+
+.incomplete:hover{
+    box-shadow: 0 0 10px 1px red;
+}
+
+.achievement-cards img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+#completed-incomplete{
+    height: 50px;
+    width: 50px;
+}
+/* ACHIEVEMENT SECTION */
+
+#Back-div{
+    padding: 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#Back-div a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg,#ff4dff,#b517ff,#7b2cff);
+    gap: 10px;
+    align-items: center;
+}
+
+#Back-div a img{
+    height: 20px;
+    width: 20px;
+}
+
+#Back-div a:hover{
+    transform: scale(1.05);
+}
